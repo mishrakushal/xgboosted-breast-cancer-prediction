@@ -12,7 +12,6 @@ Original file is located at
 """
 
 import numpy as np
-import matplotlib.pyplot as plt
 import pandas as pd
 
 """## Importing the dataset"""
@@ -28,7 +27,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, rando
 
 """## Training XGBoost on the Training set"""
 
-from xgboost import XGBClassifier # we use XGBRegerssor for regression model
+from xgboost import XGBClassifier
 classifier = XGBClassifier()
 classifier.fit(X_train, y_train)
 
